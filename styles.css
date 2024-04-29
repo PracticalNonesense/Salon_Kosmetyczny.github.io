@@ -14,6 +14,7 @@ nav ul {
 }
 
 nav li {
+    justify-content: space-around;
     font-size: 50px;
     font-family: Inter;
     margin: 0 60px;
@@ -50,6 +51,7 @@ footer img {
 }
 
 .baner img {
+    justify-content: space-around;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -57,7 +59,7 @@ footer img {
 }
 
 .baner h1 {
-    flex-direction: column;
+    justify-content: space-around;
     display: flex;
     font-family: Georgia;
     margin-top: 10%;
