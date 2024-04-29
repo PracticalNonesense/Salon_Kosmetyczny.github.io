@@ -8,6 +8,7 @@ body {
 }
 
 nav ul {
+    justify-content: space-around;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -49,6 +50,7 @@ footer img {
     height: 160px;
     width: 160px;
 }
+
 .baner img {
     justify-content: space-around;
     display: flex;
