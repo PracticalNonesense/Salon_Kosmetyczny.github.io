@@ -1,19 +1,25 @@
+Oczywiście! Oto przepisany kod CSS z wykorzystaniem metody flexbox:
+
+```css
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {
-
     list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
-
-	font-size: 50px;
-	font-family: Inter;
-    display: inline;
-    margin: 60px;
+    font-size: 50px;
+    font-family: Inter;
+    margin: 0 60px;
 }
 
 header {
@@ -26,70 +32,78 @@ header {
     max-width: 100px;
 }
 
-.linia{
-	width: 100% ;
-	height: 10px;
-	background-color: #FFCACA;
+.linia {
+    width: 100%;
+    height: 10px;
+    background-color: #FFCACA;
 }
-footer img{
-	margin-left:50%;
-	margin: 120px;
-	height: 130px;
-	width:130px;
+
+footer img {
+    margin-left: 50%;
+    margin: 120px;
+    height: 130px;
+    width: 130px;
 }
- .fb{
-		margin-left:15%;
-	 	height: 160px;
-		width:160px;
- }
- .baner img{
-	 width: 100%;
-	 height: auto;
- }
 
- .baner h1 {
-	 font-family: Georgia  ;
-	margin-top: 10%;
-	margin-left: 29%;
-   position: absolute;
-   color: black;
-   font-size: 52px;
- }
- .corobi{
-	 display:flex;
-	 justify-content: space-around;
- }
- .corobi .serv img {
-	 height: 300px;
-	 width: 300px;
-	 display:inline;
- }
+.fb {
+    margin-left: 15%;
+    height: 160px;
+    width: 160px;
+}
 
- .serv p {
-	font-family: Helvetica;
-    text-align: center; /* Wyśrodkuj zawartość */
-    font-size: 30px; /* Rozmiar czcionki */
-    font-weight: bold; /* Pogrubienie tekstu */
-    margin-bottom: 20px; /* Odstęp między zdjęciami */
- }
+.baner img {
+    width: 100%;
+    height: auto;
+}
 
- .carousel-inner img{
-	 height:600px;
-	 object-fit: cover;
-	 overflow: hidden;
- }
-  .carousel-inner{
-  width:600px;
-  margin:auto;
-  display: flex;
-  }
-  .carousel-control-prev span{
-	    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-  }
- .carousel-control-next span{
- 	    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
- }
+.baner h1 {
+    font-family: Georgia;
+    margin-top: 10%;
+    margin-left: 29%;
+    position: absolute;
+    color: black;
+    font-size: 52px;
+}
 
- h2{
-	 text-align:center;
- }
+.corobi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.corobi .serv img {
+    height: 300px;
+    width: 300px;
+    display: inline;
+}
+
+.serv p {
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    width: 600px;
+    margin: auto;
+    display: flex;
+}
+
+.carousel-control-prev span {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next span {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+h2 {
+    text-align: center;
+}
