@@ -49,9 +49,6 @@ footer img {
     height: 160px;
     width: 160px;
 }
-.baner{
-    justify-content: space-around;
-}
 .baner img {
     justify-content: space-around;
     display: flex;
