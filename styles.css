@@ -36,6 +36,7 @@ header {
 }
 
 footer img {
+    display: inline;
     margin: 120px 0 0 50%;
     height: 130px;
     width: 130px;
@@ -55,7 +56,7 @@ footer img {
 .baner h1 {
     font-family: Georgia;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 8%;
     position: absolute;
     color: black;
     font-size: 60px;
