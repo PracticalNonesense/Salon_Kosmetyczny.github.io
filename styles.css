@@ -14,13 +14,13 @@ nav ul {
 }
 
 nav li {
-    font-size: 50px;
+    font-size: 25px;
     font-family: Inter;
-    margin: 0 60px;
+    margin: 40px 110px;
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
 }
@@ -35,17 +35,38 @@ header {
     background-color: #FFCACA;
 }
 
-footer img {
-    margin-left: 50%;
-    margin: 120px;
-    height: 130px;
-    width: 130px;
+footer{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	position: relative;
 }
 
-.fb {
-    margin-left: 15%;
-    height: 160px;
-    width: 160px;
+footer a{
+	margin: 20% 0 0 50%;
+	justify-content:space-between;
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+.strzala{
+ margin:0 0 0 20%; 	
+}
+
+footer h1{
+	font-family: Courier New;
+    color: black;
+    font-size: 9px;
+}
+
+.baner{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width:100%;
 }
 
 .baner img {
@@ -55,22 +76,27 @@ footer img {
 
 .baner h1 {
     font-family: Georgia;
-    margin-top: 10%;
-    margin-left: 29%;
     position: absolute;
     color: black;
-    font-size: 52px;
+    font-size: 60px;
+	transform: translate(0%,-20%);
 }
 
 .corobi {
+    margin:0 60px 0 0 ;
     display: flex;
     justify-content: space-around;
+}
+
+.corobi .serv .reg{
+    margin:0 0 0 70px ;
 }
 
 .corobi .serv img {
     height: 300px;
     width: 300px;
     display: inline;
+    margin:0 0 0 40px ;
 }
 
 .serv p {
@@ -78,7 +104,7 @@ footer img {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin:0 150px 20px 0;
 }
 
 .carousel-inner img {
