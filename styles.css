@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ nav{
 }
 
 nav ul {
-    flex: 2;
+	flex: 2;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -94,7 +94,6 @@ footer h1{
 }
 
 .corobi {
-    margin:0 60px 0 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -104,11 +103,11 @@ footer h1{
 }
 
 .corobi .serv .zab{
-	margin:0 0 0 150px;
+	margin:0 0 0 200px;
 }
 
 .corobi .serv .pro{
-	margin:0 0 0 150px;
+	margin:0 0 0 200px;
 }
 
 
@@ -116,19 +115,18 @@ footer h1{
     height: 300px;
     width: 300px;
     display: inline;
-    margin:0 0 0 120px;
+	margin:0 0 0 230px;
 }
 
 .serv{
 	flex: 2;
 }
 
-.corobi .serv p{
+.serv p{
     font-family: Helvetica;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    margin:0 260px 20px 0;
 }
 
 .carousel-inner img {
