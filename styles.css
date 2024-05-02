@@ -94,7 +94,7 @@ footer h1{
 }
 
 .corobi {
-    margin:0 60px 0 0 ;
+    margin:0 60px 0 50px;
     display: flex;
     justify-content: space-around;
 }
