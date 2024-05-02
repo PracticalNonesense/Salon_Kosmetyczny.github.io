@@ -7,13 +7,19 @@ body {
     justify-content: center;
 }
 
+nav{
+	display:flex;
+}
+
 nav ul {
+	flex: 2;
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
 nav li {
+	flex: 1;
     font-size: 25px;
     font-family: Inter;
     margin: 40px 110px;
@@ -43,6 +49,7 @@ footer{
 }
 
 footer a{
+	flex:2;
 	margin: 20% 0 0 50%;
 	justify-content:space-between;
     display: flex;
@@ -75,6 +82,7 @@ footer h1{
 }
 
 .baner h1 {
+	flex: 2;
     font-family: Georgia;
     position: absolute;
     color: black;
@@ -89,22 +97,34 @@ footer h1{
 }
 
 .corobi .serv .reg{
-    margin:0 0 0 70px ;
+	margin:0 0 0 120px;
+}
+
+.corobi .serv .zab{
+	margin:0 0 0 120px;
+}
+
+.corobi .serv .pro{
+	margin:0 0 0 120px;
 }
 
 .corobi .serv img {
     height: 300px;
     width: 300px;
     display: inline;
-    margin:0 0 0 40px ;
+    margin:0 0 0 120px;
 }
 
-.serv p {
+.serv{
+	flex: 2;
+}
+
+.serv p{
     font-family: Helvetica;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    margin:0 150px 20px 0;
+    margin:0 260px 20px 0;
 }
 
 .carousel-inner img {
