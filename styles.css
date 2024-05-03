@@ -99,15 +99,15 @@ footer h1{
 }
 
 .corobi .serv .reg{
-	margin:0 0 0 180px;
+	margin:0 0 0 0;
 }
 
 .corobi .serv .zab{
-	margin:0 0 220px;
+	margin:0 0 0 0;
 }
 
 .corobi .serv .pro{
-	margin:0 0 0 220px;
+	margin:0 0 0 0;
 }
 
 
@@ -115,7 +115,6 @@ footer h1{
     height: 300px;
     width: 300px;
     display: inline;
-	margin:0 0 0 230px;
 }
 
 .serv{
