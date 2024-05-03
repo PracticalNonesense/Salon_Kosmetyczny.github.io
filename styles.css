@@ -96,10 +96,11 @@ footer h1{
 .corobi {
     display: flex;
     justify-content: space-around;
+margin: 0 0 0 120px;
 }
 
 .corobi .serv .reg{
-	margin:0 0 0 200px;
+	margin:0 100px 0 0;
 }
 
 .corobi .serv .zab{
