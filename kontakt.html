@@ -25,33 +25,43 @@
     </header>
     <div class="linia"></div>
     <br />
-        <section id="contact-form">
+        <section class="form">
         <h2>Masz pytanie? Napisz do nas!</h2>
-        <form action="process_form.php" method="post">
-            <!-- Add your form fields here -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
+        <form action="kontakt.php" method="post">
+		<br />
+		<br />
+            <label for="name">Imię:</label>
+			<br />
+            <input type="text" class="name" name="name" required>
+			<br />
+			<br />
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
+			<br />
+            <input type="email" class="email" name="email" required>
+			<br />
+			<br />
+            <label for="message">Treść Wiadomości:</label>
+			<br />
+            <textarea class="message" name="message" rows="4" required></textarea>
+			<br />
+			<br />
+			<br />
+            <button type="submit" class="submit">Wyślij</button>
         </form>
         </section>
     <br />
+	<div class= "back">
 	<div class="linia"></div>
 	<br />
 	<h1><strong>Odwiedź nas na naszych social mediach:</strong></h1>
     <footer>
 	<a href="https://www.facebook.com/groups/367320846754837" target="_blank"><img src='https://cdn-icons-png.freepik.com/256/2175/2175193.png?semt=ais_hybrid' class='fb'></a>
 	<a href="https://www.instagram.com/" target="_blank"><img src='https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-black-glyph.png'class='insta'></a>
-	<a href="https://twitter.com/?lang=pl" target="_blank"><img src='https://clipart-library.com/data_images/301637.jpg' class='x'></a>
+	<a href="https://twitter.com/?lang=pl" target="_blank"><img src='https://freelogopng.com/images/all_img/1690643640twitter-x-icon-png.png' class='x'></a>
 	<a href="#top"><img src='https://cdn-icons-png.flaticon.com/512/25/25366.png'class='strzala'></a>
 	<div class="linia"></div>
     </footer>
+	</div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
