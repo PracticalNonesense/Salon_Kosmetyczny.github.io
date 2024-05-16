@@ -1,4 +1,5 @@
 body {
+	box-sizing: border-box;
     margin: 0 0 0 0;
     padding: 0;
     display: flex;
@@ -45,28 +46,57 @@ header {
 }
 
 footer{
+	margin:0 0 0 -15%;
+	background-color: #FFCACA;
 	display:flex;
 	align-items:center;
 	justify-content: center;
 	position: relative;
 }
 
-footer a{
+footer a img{
 	flex:2;
 	margin: 20% 0 0 50%;
 	justify-content:space-between;
     display: flex;
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
 }
+.x{
+		margin: 0 80% 25% 0;
+	    background-color: #FFCACA;
+}
+.insta{
+		margin: 0 80% 25% 0;
+	    background-color: #FFCACA;
+}
+.fb{
+		margin: 0 80% 25% 0;
+	    background-color: #FFCACA;
+}   
 .strzala{
- margin:0 0 0 20%; 	
+		margin: 0 80% 25% 0;
+		    background-color: #FFCACA;
+}
+.back {
+	    background-color: #FFCACA;
+		width: 100%;
+}
+.back h1{
+    font-size: 30px;
+	margin:0 0 5% 35%;
+	font-style: bold;
 }
 
-footer h1{
+footer a{
+margin: 0 0 0 20%;
+}
+
+footer h1 strong{
+	background-color: #FFCACA;
 	font-family: Courier New;
     color: black;
-    font-size: 9px;
+    font-size: 4px;
 }
 
 .baner{
@@ -113,8 +143,8 @@ footer h1{
 
 
 .corobi .serv img {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     display: inline;
     margin:0 0 0 50px;
 }
@@ -125,6 +155,7 @@ footer h1{
 }
 
 .serv p{
+	margin : 15% 25% 0 0;
     font-family: Helvetica;
     text-align: center;
     font-size: 30px;
