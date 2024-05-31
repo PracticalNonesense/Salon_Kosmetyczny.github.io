@@ -1,0 +1,165 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+	display:flex;
+}
+
+nav ul {
+	flex: 2;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul a{
+	color: black;
+	text-decoration-color: black;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:none;
+}
+li:hover{
+	color:grey;
+}
+nav li {
+	color:black;
+	flex: 1;
+    font-size: 25px;
+    font-family: Inter;
+    margin: 40px 110px;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.linia {
+    width: 100%;
+    height: 10px;
+    background-color: #FFCACA;
+}
+
+footer{
+	margin:0 0 0 -15%;
+	background-color: #FFCACA;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	position: relative;
+}
+
+footer a img{
+	flex:2;
+	margin: 20% 0 0 50%;
+	justify-content:space-between;
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+.x{
+		margin: 0 80% 25% 0;
+	    background-color: #FFCACA;
+}
+.insta{
+		margin: 0 80% 25% 0;
+	    background-color: #FFCACA;
+}
+.fb{
+		margin: 0 80% 25% 0;
+	    background-color: #FFCACA;
+}   
+.strzala{
+		margin: 0 80% 25% 0;
+		    background-color: #FFCACA;
+}
+.back {
+	    background-color: #FFCACA;
+		width: 100%;
+}
+.back h1{
+    font-size: 30px;
+	margin:0 0 5% 35%;
+	font-style: bold;
+}
+
+footer a{
+margin: 0 0 0 20%;
+}
+
+footer h1 strong{
+	background-color: #FFCACA;
+	font-family: Courier New;
+    color: black;
+    font-size: 4px;
+}
+.zalog{
+	text-align: right;
+	margin: 0 0 0 70%;
+}
+.dzialalnosc{
+text-align: center;
+}
+
+.cele{
+text-align: center;
+}
+
+.certyfikaty{
+text-align: center;
+}
+
+.dzialalnosc h2{
+font-style: bold;
+font-family: Lucida Console;
+text-align: center;
+font-size: 35px;
+}
+
+.cele h2{
+font-style: bold;
+font-family: Lucida Console;
+text-align: center;
+font-size: 35px;
+}
+
+.certyfikaty h2{
+font-style: bold;
+font-family: Lucida Console;
+text-align: center;
+font-size: 35px;
+}
+
+.certyfikaty img{
+text-align: center;
+height: 40%;
+width: 20%;
+margin: 0 0 0 10%;
+}
+.dzialalnosc p{
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+width:60%;
+margin: 0 0 0 20%;
+}
+
+.cele p{
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+width:60%;
+margin: 0 0 0 20%;
+}
