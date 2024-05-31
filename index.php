@@ -1,3 +1,6 @@
+<?php 
+
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -8,17 +11,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<div class="zalog">
+	<h2>Użytkownik zalogowany<h2>
+	<button type="submit" style='align-items: center;
+  background-image: linear-gradient(135deg, #FFB5DA 40%, #FFCACA);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  margin: 0 0 0 40%;
+  -webkit-user-select: none;' onclick="window.location='index.html'">Wyloguj</button>
+	</div>
     <header id="top">
         <div class="logo">
-            <a href="index.html"><img src="logo.png" alt="Logo Salonu Kosmetycznego PIĘKNOŚĆ"></a>
+            <a href="index.php"><img src="logo.png" alt="Logo Salonu Kosmetycznego PIĘKNOŚĆ"></a>
         </div>
         <nav>
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="onas.html"><li>O nas</li></a>
-                <a href="uslugi.html"><li>Usługi</li></a>
-                <a href="cennik.html"><li>Cennik</li></a>
-                <a href="kontakt.html"><li>Kontakt</li></a>
+                <a href="index.php"><li>Home</li></a>
+                <a href="onas.php"><li>O nas</li></a>
+                <a href="uslugi.php"><li>Usługi</li></a>
+                <a href="cennik.php"><li>Cennik</li></a>
+                <a href="kontakt1.php"><li>Kontakt</li></a>
 	    </ul>
         </nav>
     </header>

@@ -55,12 +55,6 @@ section{
 	width: 60%;
 	background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-beautiful-flower-background-image_400124757.jpg");
 }
-.message{
-	width: 80%;
-	height: 70%;
-	resize: none;
-}
-
 .form{
 	font-size:20px;
 	font-family: Inter;
@@ -92,35 +86,6 @@ align-items: center;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
-.submit:active {
-  outline: 0;
-}
-
-.submit:hover {
-  outline: 0;
-}
-
-.submit span {
-  transition: all 200ms;
-}
-
-.submit:hover span {
-  transform: scale(.9);
-  opacity: .75;
-}
-
-@media screen and (max-width: 991px) {
-  .submit {
-    font-size: 15px;
-    height: 50px;
-  }
-
-  .submit span {
-    line-height: 50px;
-  }
-}
-
 footer{
 	margin:0 0 0 -15%;
 	background-color: #FFCACA;
@@ -173,8 +138,4 @@ footer h1 strong{
 	font-family: Courier New;
     color: black;
     font-size: 4px;
-}
-.zalog{
-	text-align: right;
-	margin: 0 0 0 70%;
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Kosmetyczny PIĘKNOŚĆ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cennik.css">
+    <link rel="stylesheet" href="rejestracja.css">
 </head>
 <body>
     <header id="top">
@@ -24,40 +25,62 @@
     </header>
     <div class="linia"></div>
     <br />
-	    <h1>Cennik</h1>
-    <table class="cennik">
-        <thead>
-            <tr>
-				<th> </th>
-                <th>Usługa</th>
-                <th>Cena</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>100 PLN</td>
-            </tr>
-            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>150 PLN</td>
-            </tr>
-            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>200 PLN</td>
-            </tr>
-			            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>250 PLN</td>
-            </tr>
-        </tbody>
-    </table>
+        <section class="form">
+        <h2>Rejestracja udana!</h2>
+		<button type="submit" style='align-items: center;
+  background-image: linear-gradient(135deg, #FFB5DA 40%, #FFCACA);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+	margin: 0 0 0 45%;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;' onclick="window.location='logowanie.php'">Zaloguj się</button>
+<?php
+session_start();
+require 'db.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    $email = $_POST['email'];
+    $password = $_POST['haslo'];
+
+
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        $stmt = $conn->prepare("INSERT INTO dane_logowania (email, haslo) VALUES (?, ?)");
+        $stmt->bind_param("ss", $email, $hashed_password);
+
+        if ($stmt->execute()) {
+            $_SESSION['email'] = $email;
+            header("Location: index.php");
+            exit();
+        } else {
+            $error = "Rejestracja nieudana.";
+        }
+        $stmt->close();
+    
+
+?>	
+
+        </section>
     <br />
-    <br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
 	<br />
 	<br />
 	<div class= "back">

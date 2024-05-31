@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Kosmetyczny PIĘKNOŚĆ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cennik.css">
+    <link rel="stylesheet" href="logowanie.css">
 </head>
 <body>
     <header id="top">
@@ -24,41 +24,54 @@
     </header>
     <div class="linia"></div>
     <br />
-	    <h1>Cennik</h1>
-    <table class="cennik">
-        <thead>
-            <tr>
-				<th> </th>
-                <th>Usługa</th>
-                <th>Cena</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>100 PLN</td>
-            </tr>
-            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>150 PLN</td>
-            </tr>
-            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>200 PLN</td>
-            </tr>
-			            <tr>
-                <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>250 PLN</td>
-            </tr>
-        </tbody>
-    </table>
-    <br />
-    <br />
-	<br />
+	<section class="form">
+        <h2>Zaloguj się!</h2>
+        <form method="post">
+		<br />
+		<br />
+            <label for="email">Email:</label>
+			<br />
+            <input type="text" class="email" name="email" required>
+			<br />
+			<br />
+            <label for="haslo">Hasło:</label>
+			<br />
+            <input type="password" class="haslo" name="haslo" required>
+			<br />
+			<br />
+            <button type="submit" class="submit" >Logowanie</button>
+        </form>
+		<?php
+session_start();
+require 'db.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['haslo'];
+
+ $stmt = $conn->prepare("SELECT haslo FROM dane_logowania WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->store_result();
+
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($hashed_password);
+        $stmt->fetch();
+
+        if (password_verify($password, $hashed_password)) {
+            $_SESSION['email'] = $email;
+            header("Location: index.php");
+            exit();
+        } else {
+            $error = "Nieprawidłowe hasło.";
+        }
+    } else {
+        $error = "Nie znaleziono użytkownika o podanym adresie email.";
+    }
+    $stmt->close();
+}
+?>
+        </section>
 	<br />
 	<div class= "back">
 	<div class="linia"></div>

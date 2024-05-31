@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -5,59 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Kosmetyczny PIĘKNOŚĆ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cennik.css">
+    <link rel="stylesheet" href="uslugi.css">
 </head>
 <body>
+	<div class="zalog">
+	<h2>Użytkownik zalogowany<h2>
+	<button type="submit" style='align-items: center;
+  background-image: linear-gradient(135deg, #FFB5DA 40%, #FFCACA);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  margin: 0 0 0 40%;
+  -webkit-user-select: none;' onclick="window.location='index.html'">Wyloguj</button>
+	</div>
     <header id="top">
         <div class="logo">
-            <a href="index.html"><img src="logo.png" alt="Logo Salonu Kosmetycznego PIĘKNOŚĆ"></a>
+            <a href="index.php"><img src="logo.png" alt="Logo Salonu Kosmetycznego PIĘKNOŚĆ"></a>
         </div>
         <nav>
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="onas.html"><li>O nas</li></a>
-                <a href="uslugi.html"><li>Usługi</li></a>
-                <a href="cennik.html"><li>Cennik</li></a>
-                <a href="kontakt.html"><li>Kontakt</li></a>
+                <a href="index.php"><li>Home</li></a>
+                <a href="onas.php"><li>O nas</li></a>
+                <a href="uslugi.php"><li>Usługi</li></a>
+                <a href="cennik.php"><li>Cennik</li></a>
+                <a href="kontakt1.php"><li>Kontakt</li></a>
 	    </ul>
         </nav>
     </header>
     <div class="linia"></div>
     <br />
-	    <h1>Cennik</h1>
-    <table class="cennik">
+	    <h1>Nasze Usługi</h1>
+    <table class="uslugi">
         <thead>
             <tr>
 				<th> </th>
                 <th>Usługa</th>
-                <th>Cena</th>
+                <th>Opis</th>
+
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>100 PLN</td>
+				<td>Usługa 1</td>
+                <td><p> Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis</p></td>
             </tr>
             <tr>
                 <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>150 PLN</td>
+				<td>Usługa 2</td>
+                <td><p> Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis</p></td>
             </tr>
             <tr>
                 <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>200 PLN</td>
+				<td>Usługa 3</td>
+                <td><p> Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis</p></td>
             </tr>
 			            <tr>
                 <td><img src="placeholder.jpg" alt="Placeholder" width="30"></td>
-				<td>Usługa</td>
-                <td>250 PLN</td>
+				<td>Usługa 4</td>
+                <td><p> Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis Opis 1 Opis 1 Opis</p></td>
             </tr>
         </tbody>
     </table>
-    <br />
-    <br />
 	<br />
 	<br />
 	<div class= "back">
